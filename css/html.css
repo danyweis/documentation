@@ -6,13 +6,36 @@
 .page {
     /* VARIABLES*/
     --navBorder: 2px solid #444;
-    --fontColor: #444;
+    --fontColor: #474441;
     --bgColor: #eee;
+    --headerColor: #111;
+    /*Code Box*/
+    --codeBgColor: #2d303a;
+    --tagColor: #ff5959;
+    --classIdColor: #526E5D;
+    --classIdNameColor: #F9C863;
+    --codeTextColor: #eee;
+    --variableColor: #5B8BB9;
+    --commentColor: #55636D;
     /* END VARIABLES */
     display: grid;
     grid-template-columns: 200px 1fr;
     color: var(--fontColor);
     background-color: var(--bgColor);
+    font-family: sans-serif;
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+}
+
+header {
+    color: var(--headerColor);
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #header {
@@ -57,10 +80,95 @@
 
 /* Main Section */
 .main-section {
-    padding: 25px;
+    padding: 25px 0 10px 25px;
 }
 
 .main-section header {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
+}
+
+.main-section h3, .main-section h4 {
+    padding: 10px 0;
+}
+
+.main-section p {
+    padding: 0 20px;
+}
+
+.listBox {
+    padding-left: 50px;
+}
+
+/* Code Boxes*/
+pre {
+    background-color: var(--codeBgColor);
+    margin: 10px 0 10px 25px;
+    color: var(--codeTextColor);
+    max-width: calc(100% - 50px);
+    overflow-x: auto;
+    font-family: serif;
+}
+
+.tag {
+    color: var(--tagColor);
+}
+
+.classId {
+    color: var(--classIdColor);
+}
+
+.classIdName {
+    color: var(--classIdNameColor);
+}
+
+.comment {
+    color: var(--commentColor);
+}
+
+@media (max-width: 700px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    #header {
+        grid-column: 1/2;
+        height: 100vh;
+        display: block;
+    }
+
+    #main-doc {
+        grid-column: 2/3;
+    }
+
+    #introduction_To_HTML {
+        margin-top: 0;
+    }
+
+    #header {
+        grid-column: 1/2;
+        height: 200px;
+        width: 100vw;
+        overflow-y: scroll;
+        position: fixed;
+        background-color: var(--bgColor);
+        z-index: 1;
+    }
+
+    #main-doc {
+        grid-column: 1/2;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        border: none;
+        height: auto;
+    }
+
+    .main-section {
+        position: relative;
+        border-top: 202px solid transparent;
+        margin-top: -200px;
+    }
 }
