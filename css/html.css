@@ -14,11 +14,12 @@
     --codeBgColor: #2d303a;
     --tagColor: #ff5959;
     --classIdColor: #5ba076;
-    --classIdNameColor: #F9C863;
+    --classIdNameColor: #D4AD5A;
     --classIdDefinitionColor: #A680AB;
     --codeTextColor: #eee;
     --variableColor: #5B8BB9;
     --commentColor: #55636D;
+    --jsNamedColor: #F69157;
     /* END VARIABLES */
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -128,24 +129,32 @@ pre {
     font-family: serif;
 }
 
-.tag {
+.codeRed {
     color: var(--tagColor);
 }
 
-.classId {
+.codeGreen {
     color: var(--classIdColor);
 }
 
-.classIdName {
+.codeYellow {
     color: var(--classIdNameColor);
 }
 
-.classIdDefinitionColor {
+.codePurple {
     color: var(--classIdDefinitionColor);
 }
 
-.comment {
+.codeGray {
     color: var(--commentColor);
+}
+
+.codeBlue {
+    color: var(--variableColor);
+}
+
+.codeOrange {
+    color: var(--jsNamedColor);
 }
 
 @media (max-width: 700px) {
