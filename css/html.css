@@ -98,6 +98,15 @@ hr {
 
 .listBox {
     padding-left: 50px;
+    margin-top: 10px;
+}
+
+.links {
+    color: var(--headerColor);
+}
+
+.links:hover {
+    color: var(--variableColor);
 }
 
 /* Code Boxes*/
@@ -119,7 +128,7 @@ pre {
 }
 
 .classIdName {
-    color: var(--classIdNameColor);
+    color: var(--classIdColorName);
 }
 
 .comment {
@@ -167,6 +176,12 @@ pre {
     }
 
     .main-section {
+        position: relative;
+        border-top: 202px solid transparent;
+        margin-top: -200px
+    }
+
+    .headSection {
         position: relative;
         border-top: 202px solid transparent;
         margin-top: -200px;

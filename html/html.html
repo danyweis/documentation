@@ -42,25 +42,28 @@
         <!--       DOCTYPE -->
         <h3>&lt;!DOCTYPE html&gt;</h3>
         <p>The <strong>&lt;!DOCTYPE html&gt;</strong> has to be the first thing on the HTML document, the <strong>DOCTYPE</strong> tells the browser what HTML version we will use</p>
+        <br>
         <!--       HTML -->
         <h3>&lt;html&gt;&lt;/html&gt;</h3>
         <p>The <strong>&lt;html&gt;</strong> tag tells the browser that this is an HTML document.</p>
         <p>The <strong>&lt;html&gt;</strong> tag is the root of the HTML document, There is only the &lt;!DOCTYPE html&gt; witch will be placed outside of the HTML tag.</p>
+        <br>
         <!--       HEAD -->
         <h3>&lt;head&gt;&lt;/head&gt;</h3>
         <p>The <strong>&lt;head&gt;</strong> tag is a container in the one we include all the head elements.</p>
         <p>These are the following elements:</p>
         <div class="listBox">
           <ul>
-            <li><a href="#title" class="head-Link">&lt;title&gt;</a></li>
-            <li><a href="#style" class="head-Link">&lt;style&gt;</a></li>
-            <li><a href="#link" class="head-Link">&lt;link&gt;</a></li>
-            <li><a href="#base" class="head-Link">&lt;base&gt;</a></li>
-            <li><a href="#meta" class="head-Link">&lt;meta&gt;</a></li>
-            <li><a href="#script" class="head-Link">&lt;script&gt;</a></li>
-            <li><a href="#noscript" class="head-Link">&lt;noscript&gt;</a></li>
+            <li><a href="#title" class="links">&lt;title&gt;</a></li>
+            <li><a href="#style" class="links">&lt;style&gt;</a></li>
+            <li><a href="#link" class="links">&lt;link&gt;</a></li>
+            <li><a href="#base" class="links">&lt;base&gt;</a></li>
+            <li><a href="#meta" class="links">&lt;meta&gt;</a></li>
+            <li><a href="#script" class="links">&lt;script&gt;</a></li>
+            <li><a href="#noscript" class="links">&lt;noscript&gt;</a></li>
           </ul>
         </div>
+        <br>
         <!--       BODY -->
         <h3>&lt;body&gt;&lt;/body&gt;</h3>
         <p>In the <strong>&lt;body&gt;</strong> tag is where the fun beginns, in the <strong>&lt;body&gt;</strong> container we write the HTML document content like Paragraphs, Headers, Hyperlinks, Images, ...</p>
@@ -68,7 +71,7 @@
 
 
         <h4>This is how the base of the HTML document has to look like:</h4>
-        <!--       CODE -->
+        <!--       CODE BOX -->
         <pre>
       <code>
       <span class="tag">&lt;!DOCTYPE html&gt;</span>
@@ -87,13 +90,43 @@
       <br>
       <hr>
       <br>
+
       <section class="main-section" id="head_Tags">
+
         <header>Head Tags</header>
-        <p>link</p>
+
+        <!--       TITLE -->
+
+        <h3 id="title" class="headSection">&lt;title&gt;&lt;/title&gt;</h3>
+        <p>The <strong>&lt;title&gt;</strong> element is required in the HTML document and the <strong>&lt;title&gt;</strong> element:</p>
+        <div class="listBox">
+          <ul>
+            <li>Defines the title in the browser tab</li>
+            <li>If page added to favorites it gets the page title</li>
+            <li>The search engine results will display the title</li>
+          </ul>
+        </div>
+        <br>
+
+        <!--       STYLE -->
+
+        <h3 id="style" class="headSection">&lt;style&gt;&lt;/style&gt;</h3>
+        <p>The <strong>&lt;style&gt;</strong> tag is use to define the <a href="#css.html" class="links">CSS</a> in the HTML document.</p>
+        <p>It is not recommended to do that, it is better to create a seperate CSS file and to link it using the <a href="#link" class="links">&lt;link&gt;</a> tag. </p>
+        <br>
+
+        <!--       LINK -->
+
+        <h3 id="link" class="headSection">&lt;link&gt;</h3>
+        <p>The <strong>&lt;link&gt;</strong> tag is used to link external style sheets from our CSS file or from outside like <em><a href="" target="_blank" class="links">Google Fonts</a>, <a href="" target="_blank" class="links">Font Awsome</a>, <a
+              href="" target="_blank" class="links">Bootstrap</a></em> and a lot more.</p>
+
+
+
         <p>meta</p>
         <p>script</p>
-        <p>style</p>
-        <p>title</p>
+
+
         <p>noscript</p>
       </section>
 
@@ -186,7 +219,6 @@
     </main>
 
   </div>
-
 
 </body>
 
