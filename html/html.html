@@ -49,7 +49,7 @@
         <p>The <strong>&lt;html&gt;</strong> tag is the root of the HTML document, There is only the &lt;!DOCTYPE html&gt; witch will be placed outside of the HTML tag.</p>
         <br>
         <!--       HEAD -->
-        <h3>&lt;head&gt;&lt;/head&gt;</h3>
+        <h3 id="head">&lt;head&gt;&lt;/head&gt;</h3>
         <p>The <strong>&lt;head&gt;</strong> tag is a container in the one we include all the head elements.</p>
         <p>These are the following elements:</p>
         <div class="listBox">
@@ -57,8 +57,8 @@
             <li><a href="#title" class="links">&lt;title&gt;</a></li>
             <li><a href="#style" class="links">&lt;style&gt;</a></li>
             <li><a href="#link" class="links">&lt;link&gt;</a></li>
-            <li><a href="#base" class="links">&lt;base&gt;</a></li>
             <li><a href="#meta" class="links">&lt;meta&gt;</a></li>
+            <li><a href="#base" class="links">&lt;base&gt;</a></li>
             <li><a href="#script" class="links">&lt;script&gt;</a></li>
             <li><a href="#noscript" class="links">&lt;noscript&gt;</a></li>
           </ul>
@@ -72,19 +72,21 @@
 
         <h4>This is how the base of the HTML document has to look like:</h4>
         <!--       CODE BOX -->
-        <pre>
-      <code>
-      <span class="tag">&lt;!DOCTYPE html&gt;</span>
-      <span class="tag">&lt;html&gt;</span>
-          <span class="tag">&lt;head&gt;</span>
-          <span class="comment">&lt;!-- In here is where the head elements come --&gt;</span>
-          <span class="tag">&lt;/head&gt;</span>
-          <span class="tag">&lt;body&gt;</span>
-            <span class="comment">&lt;!-- In here is the Web page buildet --&gt;</span>
-          <span class="tag">&lt;/body&gt;</span>
-      <span class="tag">&lt;/html&gt;</span>
-</code>
-</pre>
+        <div class="codeBox">
+          <pre>
+        <code>
+        <span class="tag">&lt;!DOCTYPE html&gt;</span>
+        <span class="tag">&lt;html&gt;</span>
+            <span class="tag">&lt;head&gt;</span>
+              <span class="comment">&lt;!-- Content of the head element --&gt;</span>
+            <span class="tag">&lt;/head&gt;</span>
+            <span class="tag">&lt;body&gt;</span>
+              <span class="comment">&lt;!-- Content of the document --&gt;</span>
+            <span class="tag">&lt;/body&gt;</span>
+        <span class="tag">&lt;/html&gt;</span>
+  </code>
+  </pre>
+        </div>
         <!--       END CODE -->
       </section>
       <br>
@@ -107,6 +109,18 @@
           </ul>
         </div>
         <br>
+        <!--       CODEBOX -->
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="tag">&lt;head&gt;</span>
+          <span class="tag">&lt;title&gt;</span>My Awsome Webpage !<span class="tag">&lt;/title&gt;</span>
+        <span class="tag">&lt;/head&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <!--       END CODE -->
 
         <!--       STYLE -->
 
@@ -115,15 +129,88 @@
         <p>It is not recommended to do that, it is better to create a seperate CSS file and to link it using the <a href="#link" class="links">&lt;link&gt;</a> tag. </p>
         <br>
 
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="tag">&lt;head&gt;</span>
+          <span class="tag">&lt;style&gt;</span>
+            <span class="tag">body</span> {<span class="classId">background-color</span>: <span class="classIdDefinitionColor">pink</span>;}
+            <span class="tag">h1</span> {<span class="classId">color</span>: <span class="classIdDefinitionColor">blue</span>;}
+            <span class="tag">a</span> {<span class="classId">color</span>: <span class="classIdDefinitionColor">red</span>;}
+          <span class="tag">&lt;/title&gt;</span>
+        <span class="tag">&lt;/head&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <p>I cover all the information in the <strong>&lt;style&gt;</strong> tags in the <a href="css.html" class="links">CSS reminder</a>.</p>
+        <br>
+
+        <!--       END CODE -->
+
         <!--       LINK -->
 
         <h3 id="link" class="headSection">&lt;link&gt;</h3>
-        <p>The <strong>&lt;link&gt;</strong> tag is used to link external style sheets from our CSS file or from outside like <em><a href="" target="_blank" class="links">Google Fonts</a>, <a href="" target="_blank" class="links">Font Awsome</a>, <a
-              href="" target="_blank" class="links">Bootstrap</a></em> and a lot more.</p>
+        <p>The <strong>&lt;link&gt;</strong> tag is used to link external style sheets from our CSS file or from outside like <em><a href="https://fonts.google.com/" target="_blank" class="links">Google Fonts</a>, <a href="https://fontawesome.com/"
+              target="_blank" class="links">Font Awsome</a>, <a href="https://getbootstrap.com/" target="_blank" class="links">Bootstrap</a></em> and a lot more.</p>
+        <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="tag">&lt;head&gt;</span>
+          <span class="tag">&lt;link </span><span class="classId">rel</span>=<span class="classIdName">"stylesheet"</span> <span class="classId">href</span>=<span class="classIdName">"mystyle.css"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/head&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <!--       END CODE -->
+
+        <!--       META -->
+
+        <h3 id="meta" class="headSection">&lt;meta&gt;</h3>
+        <p>The <strong>&lt;mate&gt;</strong> element specitfys what character set to use when loading the webpage, page description, author, keywords and <a href="https://en.wikipedia.org/wiki/Meta_element" class="links" target="_blank">other
+            metadata</a>.</p>
+        <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="tag">&lt;head&gt;</span>
+          <span class="comment">&lt;-- Character set: --&gt;</span>
+          <span class="tag">&lt;meta </span><span class="classId">charset</span>=<span class="classIdName">"UTF-8"</span><span class="tag">&gt;</span>
+          <span class="comment">&lt;-- Web page description: --&gt;</span>
+          <span class="tag">&lt;meta </span><span class="classId">name</span>=<span class="classIdName">"description"</span> <span class="classId">content</span>=<span class="classIdName">"HTML reminder"</span><span class="tag">&gt;</span>
+          <span class="comment">&lt;-- Keywords for search engines: --&gt;</span>
+          <span class="tag">&lt;meta </span><span class="classId">name</span>=<span class="classIdName">"keywords"</span> <span class="classId">content</span>=<span class="classIdName">"HTML, CSS, JavaScript, Reminder"</span><span class="tag">&gt;</span>
+          <span class="comment">&lt;-- The authors name: --&gt;</span>
+          <span class="tag">&lt;meta </span><span class="classId">name</span>=<span class="classIdName">"author"</span> <span class="classId">content</span>=<span class="classIdName">"Your Name"</span><span class="tag">&gt;</span>
+          <span class="comment">&lt;-- You want to refresh the page every Minute: --&gt;</span>
+          <span class="tag">&lt;meta </span><span class="classId">http-equiv</span>=<span class="classIdName">"refresh"</span> <span class="classId">content</span>=<span class="classIdName">"60"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/head&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <!--       END CODE -->
+
+        <!--       BASE -->
+
+        <h3 id="base" class="headSection">&lt;base&gt;</h3>
+        <p>In the <strong>&lt;base&gt;</strong> tag you can specifie the base URL witch is targeted all the links in the HTML document.</p>
+        <p>There can only be one <strong>&lt;base&gt;</strong> tag in the <a href="#head" class="links">&lt;head&gt;</a> section</p>
+        <br>
+
+        <!--       SCRIPT -->
 
 
 
-        <p>meta</p>
         <p>script</p>
 
 
@@ -219,6 +306,7 @@
     </main>
 
   </div>
+
 
 </body>
 

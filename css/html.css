@@ -9,11 +9,13 @@
     --fontColor: #474441;
     --bgColor: #eee;
     --headerColor: #111;
+    --linkHoverColor: #40ADF3;
     /*Code Box*/
     --codeBgColor: #2d303a;
     --tagColor: #ff5959;
-    --classIdColor: #526E5D;
+    --classIdColor: #5ba076;
     --classIdNameColor: #F9C863;
+    --classIdDefinitionColor: #A680AB;
     --codeTextColor: #eee;
     --variableColor: #5B8BB9;
     --commentColor: #55636D;
@@ -23,6 +25,8 @@
     color: var(--fontColor);
     background-color: var(--bgColor);
     font-family: sans-serif;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 header, h1, h2, h3, h4, h5, h6 {
@@ -75,7 +79,7 @@ hr {
 
 .nav-link:hover {
     color: var(--bgColor);
-    background-color: var(--fontColor);
+    background-color: var(--linkHoverColor);
 }
 
 /* Main Section */
@@ -106,15 +110,20 @@ hr {
 }
 
 .links:hover {
-    color: var(--variableColor);
+    color: var(--linkHoverColor);
 }
 
 /* Code Boxes*/
+.codeBox {
+    max-width: calc(100% - 50px);
+    overflow: auto;
+    margin: 10px 0 10px 25px;
+}
+
 pre {
     background-color: var(--codeBgColor);
-    margin: 10px 0 10px 25px;
     color: var(--codeTextColor);
-    max-width: calc(100% - 50px);
+    width: 100%;
     overflow-x: auto;
     font-family: serif;
 }
@@ -128,7 +137,11 @@ pre {
 }
 
 .classIdName {
-    color: var(--classIdColorName);
+    color: var(--classIdNameColor);
+}
+
+.classIdDefinitionColor {
+    color: var(--classIdDefinitionColor);
 }
 
 .comment {
