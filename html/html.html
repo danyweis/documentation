@@ -18,6 +18,7 @@
         <a href="#first_Level_Tags" class="nav-link">First Level Tags</a>
         <a href="#head_Tags" class="nav-link">Head Tags</a>
         <a href="#sectioning_Tags" class="nav-link">Sectioning Tags</a>
+        <a href="#html_Attributes" class="nav-link">HTML Attributes</a>
         <a href="#universal_Tags" class="nav-link">Universal Tags</a>
         <a href="#text_Structing_Tags" class="nav-link">Text Structing Tags</a>
         <a href="#list_Tags" class="nav-link">List Tags</a>
@@ -60,12 +61,11 @@
             <li><a href="#meta" class="links">&lt;meta&gt;</a></li>
             <li><a href="#base" class="links">&lt;base&gt;</a></li>
             <li><a href="#script" class="links">&lt;script&gt;</a></li>
-            <!--li><a href="#noscript" class="links">&lt;noscript&gt;</a></li-->
           </ul>
         </div>
         <br>
         <!--       BODY -->
-        <h3>&lt;body&gt;&lt;/body&gt;</h3>
+        <h3 id="body" class="headSection">&lt;body&gt;&lt;/body&gt;</h3>
         <p>In the <strong>&lt;body&gt;</strong> codeRed is where the fun beginns, in the <strong>&lt;body&gt;</strong> container we write the HTML document content like Paragraphs, Headers, Hyperlinks, Images, ...</p>
         <br>
 
@@ -139,7 +139,7 @@
             <span class="codeRed">body</span> {<span class="codeGreen">background-color</span>: <span class="codePurple">pink</span>;}
             <span class="codeRed">h1</span> {<span class="codeGreen">color</span>: <span class="codePurple">blue</span>;}
             <span class="codeRed">a</span> {<span class="codeGreen">color</span>: <span class="codePurple">codeRed</span>;}
-          <span class="codeRed">&lt;/title&gt;</span>
+          <span class="codeRed">&lt;/style&gt;</span>
         <span class="codeRed">&lt;/head&gt;</span>
             </code>
           </pre>
@@ -188,7 +188,7 @@
           <span class="codeGray">&lt;-- Web page description: --&gt;</span>
           <span class="codeRed">&lt;meta </span><span class="codeGreen">name</span>=<span class="codeYellow">"description"</span> <span class="codeGreen">content</span>=<span class="codeYellow">"HTML reminder"</span><span class="codeRed">&gt;</span>
           <span class="codeGray">&lt;-- Keywords for search engines: --&gt;</span>
-          <span class="codeRed">&lt;meta </span><span class="codeGreen">name</span>=<span class="codeYellow">"keywords"</span> <span class="codeGreen">content</span>=<span class="codeYellow">"HTML, CSS, JavaScript, Reminder"</span><span class="codeRed">&gt;</span>
+          <span class="codeRed">&lt;meta </span><span class="codeGreen">name</span>=<span class="codeYellow">"keywords"</span> <span class="codeGreen">content</span>=<span class="codeYellow">"HTML, CSS, JavaScript"</span><span class="codeRed">&gt;</span>
           <span class="codeGray">&lt;-- The authors name: --&gt;</span>
           <span class="codeRed">&lt;meta </span><span class="codeGreen">name</span>=<span class="codeYellow">"author"</span> <span class="codeGreen">content</span>=<span class="codeYellow">"Your Name"</span><span class="codeRed">&gt;</span>
           <span class="codeGray">&lt;-- You want to refresh the page every Minute: --&gt;</span>
@@ -218,37 +218,39 @@
         <!--     CODEBOX -->
         <div class="codeBox">
           <pre>
-                    <code>
-                <span class="codeRed">&lt;head&gt;</span>
-                  <span class="codeRed">&lt;script&gt;</span>
-                    <span class="codeRed">var</span> <span class="codeOrange">fizz</span> = [];
-                    <span class="codeRed">var</span> <span class="codeOrange">count</span> = <span class="codePurple">1</span>;
-                    <span class="codeRed">function</span> <span class="codeOrange">fizzbuzz</span>(){
-                      <span class="codeRed">while</span>(<span class="codeGreen">count</span> &lt;= <span class="codePurple">100</span>){
-                        <span class="codeRed">if</span>(<span class="codeGreen">count</span> % <span class="codePurple">3</span> == <span class="codePurple">0</span> && <span class="codeGreen">count</span> % <span class="codePurple">5</span> == <span class="codePurple">0</span>){
-                          <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"fizzbuzz"</span>);
-                        } <span class="codeRed">else if</span> (<span class="codeGreen">count</span> % <span class="codePurple">3</span> == <span class="codePurple">0</span>){
-                          <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"fizz"</span>);
-                        } <span class="codeRed">else if</span> (<span class="codeGreen">count</span> % <span class="codePurple">5</span> == <span class="codePurple">0</span>){
-                          <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"buzz"</span>);
-                        } <span class="codeRed">else</span> {
-                          <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeGreen">count</span>);
-                        } <span class="codeGreen">count</span>++;
-                      } <span class="codeGreen">console</span>.<span class="codeGreen">log</span>(<span class="codeGreen">fizz</span>);
-                    }
-                  <span class="codeRed">&lt;/script&gt;</span>
-                <span class="codeRed">&lt;/head&gt;</span >
-                    </code>
-                  </pre>
+                  <code>
+        <span class="codeRed">&lt;head&gt;</span>
+          <span class="codeRed">&lt;script&gt;</span>
+            <span class="codeRed">var</span> <span class="codeOrange">fizz</span> = [];
+            <span class="codeRed">var</span> <span class="codeOrange">count</span> = <span class="codePurple">1</span>;
+            <span class="codeRed">function</span> <span class="codeOrange">fizzbuzz</span>(){
+              <span class="codeRed">while</span>(<span class="codeGreen">count</span> &lt;= <span class="codePurple">100</span>){
+                <span class="codeRed">if</span>(<span class="codeGreen">count</span> % <span class="codePurple">3</span> == <span class="codePurple">0</span> && <span class="codeGreen">count</span> % <span class="codePurple">5</span> == <span class="codePurple">0</span>){
+                  <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"fizzbuzz"</span>);
+                } <span class="codeRed">else if</span> (<span class="codeGreen">count</span> % <span class="codePurple">3</span> == <span class="codePurple">0</span>){
+                  <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"fizz"</span>);
+                } <span class="codeRed">else if</span> (<span class="codeGreen">count</span> % <span class="codePurple">5</span> == <span class="codePurple">0</span>){
+                  <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeYellow">"buzz"</span>);
+                } <span class="codeRed">else</span> {
+                  <span class="codeGreen">fizz</span>.<span class="codeGreen">push</span>(<span class="codeGreen">count</span>);
+                } <span class="codeGreen">count</span>++;
+              } <span class="codeGreen">console</span>.<span class="codeGreen">log</span>(<span class="codeGreen">fizz</span>);
+            }
+          <span class="codeRed">&lt;/script&gt;</span>
+        <span class="codeRed">&lt;/head&gt;</span >
+                  </code>
+                </pre>
         </div>
         <p>This Script is nothing special but just to show how fast it can become a lot so it is better to put the JavaScript in a seperate file.</p>
         <br>
 
         <!--       END CODE -->
+
       </section>
 
       <section class="main-section" id="sectioning_Tags">
         <header>Sectioning Tags</header>
+
         <!--         HEADER -->
 
         <h3 id="sectionHeader" class="headSection">&lt;header&gt;&lt;/header&gt;</h3>
@@ -277,7 +279,7 @@
         <p>The <strong>&lt;article&gt;</strong> tag defines independent, self-containd content, for exemple:</p>
         <div class="listBox">
           <ul>
-            <li>Blog psot</li>
+            <li>Blog post</li>
             <li>News article</li>
             <li>Forum post</li>
             <li>Comment</li>
@@ -307,15 +309,164 @@
         </div>
 
         <br>
+        <h4>This is an exemple on how to build a HTML skelette:</h4>
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;body&gt;</span>
+          <span class="codeRed">&lt;header&gt;</span>
+            Your Logo and header Information
+            <span class="codeRed">&lt;nav&gt;</span>
+              Navigation with links
+            <span class="codeRed">&lt;/nav&gt;</span>
+          <span class="codeRed">&lt;/header&gt;</span>
+          <span class="codeRed">&lt;section&gt;</span>
+            Some content
+            <span class="codeRed">&lt;article&gt;</span>
+              Blog post
+              <span class="codeRed">&lt;aside&gt;</span>
+                Information about the Blog post
+              <span class="codeRed">&lt;/aside&gt;</span>
+            <span class="codeRed">&lt;/article&gt;</span>
+          <span class="codeRed">&lt;/section&gt;</span>
+          <span class="codeRed">&lt;section&gt;</span>
+            Some more content
+            <span class="codeRed">&lt;article&gt;</span>
+              News article
+            <span class="codeRed">&lt;/article&gt;</span>
+          <span class="codeRed">&lt;/section&gt;</span>
+          <span class="codeRed">&lt;footer&gt;</span>
+            Contact details, Copyright
+          <span class="codeRed">&lt;/footer&gt;</span>
+        <span class="codeRed">&lt;/body&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <!--       END CODE -->
+
       </section>
+
+      <!--       HTML ATTRIBUTES -->
+
+      <section class="main-section" id="html_Attributes">
+        <header>HTML Attributes</header>
+        <p>I think at this point it will be time to talk about HTML Attributes, there is a long list of attributes but for the moment we will focus on a smaller list with the most used ones:</p>
+        <div class="listBox">
+          <ul>
+            <li><a href="#attributeStyle" class="links">style</a></li>
+            <li><a href="#attributeClass" class="links">class</a></li>
+            <li><a href="#attributeId" class="links">id</a></li>
+            <li><a href="#attributeHref" class="links">href</a></li>
+            <li><a href="#attributeSrc" class="links">src</a></li>
+            <li><a href="#attributeAlt" class="links">alt</a></li>
+            <li><a href="#attributeAction" class="links">action</a></li>
+          </ul>
+        </div>
+        <br>
+        <!--          STYLE -->
+        <h3 id="attributeStyle" class="headSection">style=""</h3>
+        <p>The <strong>style</strong> attribute is used for inline-style, this style attribute will override any style set in an external style sheet and also in the <a href="#style" class="links">&lt;style&gt;</a> container in the <a href="#head"
+            class="links">&lt;head&gt;</a> section.</p>
+        <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;p</span> <span class="codeGreen">style</span>=<span class="codeYellow">"color:blue;"</span><span class="codeRed">&gt;</span>
+          This paragraph is blue!
+        <span class="codeRed">&lt;/p&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <p style="color:blue;">This paragraph is blue!</p>
+        </div>
+
+        <br>
+
+
+        <!--       END CODE -->
+
+        <h3 id="attributeClass" class="headSection">class=""</h3>
+        <p>The <strong>class</strong> attrubute is used to define diffrent elements with equal stylesover the same <strong>class</strong> name.</p>
+        <p>Then after we can point at these elements in our <a href="#css.html" class="links">CSS</a> and style them equaly.</p>
+        <br>
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;head&gt;</span>
+          <span class="codeRed">&lt;style&gt;</span>
+            <span class="">.myClassName</span> {<span class="codeGreen">color</span>: <span class="codePurple">blue</span>;}
+          <span class="codeRed">&lt;/style&gt;</span>
+        <span class="codeRed">&lt;/head&gt;</span>
+        <span class="codeRed">&lt;body&gt;</span>
+          <span class="codeRed">&lt;h4</span> <span class="codeGreen">class</span>=<span class="codeYellow">"myClassName"</span><span class="codeRed">&gt;</span>
+            This is a blue header!
+          <span class="codeRed">&lt;/h4&gt;</span>
+          <span class="codeRed">&lt;p</span> <span class="codeGreen">class</span>=<span class="codeYellow">"myClassName"</span><span class="codeRed">&gt;</span>
+            This is a blue paragraph!
+          <span class="codeRed">&lt;/p&gt;</span>
+        <span class="codeRed">&lt;/body&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <h4 style="color:blue;">This is a blue header!</h4>
+          <p style="color:blue;">This is a blue paragraph!</p>
+        </div>
+        <br>
+        <!--          ID -->
+        <h3 id="attributeId" class="headSection">id=""</h3>
+        <br>
+        <h3 id="attributeHref" class="headSection">href=""</h3>
+        <br>
+        <h3 id="attributeSrc" class="headSection">src=""</h3>
+        <br>
+        <h3 id="attributeAlt" class="headSection">alt=""</h3>
+        <br>
+        <h3 id="attributeAction" class="headSection">action=""</h3>
+        <br>
+      </section>
+
+      <!--       UNIVERSAL TAGS -->
 
       <section class="main-section" id="universal_Tags">
         <header>Universal Tags</header>
-        <p>div</p>
-        <p>span</p>
-        <p>class</p>
-        <p>id</p>
-        <p>style</p>
+
+        <!--         DIV -->
+
+        <h3 id="universalDiv" class="headSection">&lt;div&gt;&lt;/div&gt;</h3>
+        <p>The &lt;div&gt; tag defines a section in the HTML and is offten use to structure the web page, before and after a &lt;div&gt; is by default a line-break</p>
+        <br>
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;div&gt;</span>
+          <span class="codeRed">&lt;h4&gt;</span>This is a heading in a &lt;div&gt;<span class="codeRed">&lt;/h4&gt;</span>
+          <span class="codeRed">&lt;p&gt;</span>This is a paragraph in a &lt;div&gt;<span class="codeRed">&lt;/p&gt;</span>
+        <span class="codeRed">&lt;/div&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <!--       END CODE -->
+
+        <!--         SPAN -->
+        <h3>&lt;span&gt;&lt;/span&gt;</h3>
+        <br>
       </section>
 
       <section class="main-section " id="text_Structing_Tags">
@@ -388,7 +539,6 @@
     </main>
 
   </div>
-
 
 </body>
 

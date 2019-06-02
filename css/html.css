@@ -157,6 +157,16 @@ pre {
     color: var(--jsNamedColor);
 }
 
+.exempleBox>h4 {
+    margin-left: 20px;
+}
+
+.exempleBox {
+    background-color: #ccc;
+    padding: 15px;
+    margin: 20px;
+}
+
 @media (max-width: 700px) {
     .page {
         grid-template-columns: 1fr;
