@@ -157,7 +157,7 @@ pre {
     color: var(--jsNamedColor);
 }
 
-.exempleBox>h4 {
+.exempleBox>h4, .exempleBox>a {
     margin-left: 20px;
 }
 

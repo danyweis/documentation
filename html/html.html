@@ -436,9 +436,40 @@
         <!--          HREF -->
 
         <h3 id="attributeHref" class="headSection">href=""</h3>
-        <p>The <strong>href</strong> attribute is used in a <a href="textA" class="links">a</a> and can be linked to an <a href="attributeID" class="links">id</a>.</p>
+        <p>The <strong>href</strong> attribute can be used in a <a href="#textA" class="links">a</a> and <a href="#textArea" class="links">area</a>. It specifies the URL to witch the link will go, in the <a href="#base" class="links">base</a> tag,
+          it will be the URL to all relative URLs on the page and in the <a href="#link" class="links">link</a> tag it will to the style sheet.
+          In the <a href="#textA" class="links">a</a> tag it can link to an <a href="attributeID" class="links">id</a> on the page like shown in the exemple.</p>
         <!--          create codebox and put link on top and id later -->
         <br>
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;nav&gt;</span>
+          <span class="codeRed">&lt;a</span> <span class="codeGreen">href</span>=<span class="codeYellow">"#myId"</span><span class="codeRed">&gt;</span><span class="">Test link</span><span class="codeRed">&lt;/a&gt;</span>
+        <span class="codeRed">&lt;nav&gt;</span>
+
+          <span class="codeRed">&lt;h4</span> <span class="codeGreen">id</span>=<span class="codeYellow">"myId"</span><span class="codeRed">&gt;</span>
+            This is test for the href attribute!
+          <span class="codeRed">&lt;/h4&gt;</span>
+
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <a href="#myId">This is a blue paragraph!</a>
+          <br>
+          <br>
+          <br>
+          <h4 id="myId" class="headSection">This is a test for the href attribute!</h4>
+
+        </div>
+        <br>
+        <!--          CODE END -->
+
         <h3 id="attributeSrc" class="headSection">src=""</h3>
         <br>
         <h3 id="attributeAlt" class="headSection">alt=""</h3>
