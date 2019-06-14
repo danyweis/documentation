@@ -436,9 +436,9 @@
         <!--          HREF -->
 
         <h3 id="attributeHref" class="headSection">href=""</h3>
-        <p>The <strong>href</strong> attribute can be used in a <a href="#textA" class="links">a</a> and <a href="#textArea" class="links">area</a>. It specifies the URL to witch the link will go, in the <a href="#base" class="links">base</a> tag,
-          it will be the URL to all relative URLs on the page and in the <a href="#link" class="links">link</a> tag it will to the style sheet.
-          In the <a href="#textA" class="links">a</a> tag it can link to an <a href="attributeID" class="links">id</a> on the page like shown in the exemple.</p>
+        <p>The <strong>href</strong> attribute can be used in a <a href="#textA" class="links">a</a> and <a href="#textArea" class="links">area</a>. It specifies the URL to witch the link will go, in the <a href="#base" class="links">base</a> tag, it
+          will be the URL to all relative URLs on the page and in the <a href="#link" class="links">link</a> tag it will to the style sheet. In the <a href="#textA" class="links">a</a> tag it can link to an <a href="attributeID" class="links">id</a>
+          on the page like shown in the exemple.</p>
         <!--          create codebox and put link on top and id later -->
         <br>
         <!--       CODEBOX -->
@@ -460,7 +460,7 @@
         <br>
         <h5>Exemple:</h5>
         <div class="exempleBox">
-          <a href="#myId">This is a blue paragraph!</a>
+          <a href="#myId">Test link</a>
           <br>
           <br>
           <br>
@@ -470,11 +470,82 @@
         <br>
         <!--          CODE END -->
 
+
+        <!--          SRC -->
+
         <h3 id="attributeSrc" class="headSection">src=""</h3>
+        <p>The <strong>src</strong> attribute is there to specify the source or URL witch is linked to. The source attribute can be used for:</p>
+        <div class="listBox">
+          <ul>
+            <li><a href="#structureImg" class="links">&lt;img&gt;</a></li>
+            <li><a href="#structureInput" class="links">&lt;input&gt;</a></li>
+            <li><a href="#structureIframe" class="links">&lt;iframe&gt;</a></li>
+            <li><a href="#structureAudio" class="links">&lt;audio&gt;</a></li>
+            <li><a href="#structureScript" class="links">&lt;script&gt;</a></li>
+            <li><a href="#structureSource" class="links">&lt;source&gt;</a></li>
+            <li><a href="#structureVideo" class="links">&lt;video&gt;</a></li>
+            <li><a href="#structureTrack" class="links">&lt;track&gt;</a></li>
+          </ul>
+        </div>
         <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;img</span> <span class="codeGreen">src</span>=<span class="codeYellow">"http://placekitten.com/200/150"</span><span class="codeRed">&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <img src="http://placekitten.com/200/150" alt="Kitten picture">
+
+
+        </div>
+        <br>
+        <!--          CODE END -->
+
+        <!--          ALT -->
+
         <h3 id="attributeAlt" class="headSection">alt=""</h3>
+        <p>The <strong>alt</strong> attribute is used give some alternative information, witch will show if an image can't load.</p>
+        <div class="listBox">
+          <ul>
+            <li><a href="#structureImg" class="links">&lt;img&gt;</a></li>
+            <li><a href="#structureArea" class="links">&lt;area&gt;</a></li>
+            <li><a href="#structureInput" class="links">&lt;input&gt;</a></li>
+          </ul>
+        </div>
         <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;img</span> <span class="codeGreen">src</span>=<span class="codeYellow">"htp://placekitten.com/200/150"</span>
+            <span class="codeGreen">alt</span>=<span class="codeYellow">"Picture of Kitten"</span><span class="codeRed">&gt;</span>
+        <span class="codeGray">&lt;-- I typed htp instead of http --&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <img src="htp://placekitten.com/200/150" alt="Picture of Kitten">
+
+
+        </div>
+        <br>
+        <!--          CODE END -->
+
+        <!--          ACTION -->
+
         <h3 id="attributeAction" class="headSection">action=""</h3>
+        <p>The <strong>action</strong> attribute is used in <a href="#form_Tags" class="links">&lt;form&gt;</a> tags, and will specifies where to send the form data after pressing the submit button.</p>
         <br>
       </section>
 
@@ -505,7 +576,29 @@
 
         <!--         SPAN -->
         <h3>&lt;span&gt;&lt;/span&gt;</h3>
+        <p>The <strong>&lt;span&gt;</strong> to get on an element witch is inline of an other element.</p>
         <br>
+
+        <!--       CODEBOX -->
+
+        <div class="codeBox">
+          <pre>
+            <code>
+        <span class="codeRed">&lt;p&gt;</span>This is a<span class="codeRed">&lt;span</span> <span class="codeGreen">style</span>=<span class="codeYellow">"color:red"</span><span class="codeRed">&gt;</span> paragraphe<span class="codeRed">&lt;/span&gt;</span>
+        witch I use to show you the &lt;span&gt; tag!
+        <span class="codeRed">&lt;/p&gt;</span>
+            </code>
+          </pre>
+        </div>
+        <br>
+        <h5>Exemple:</h5>
+        <div class="exempleBox">
+          <p>This is a<span style="color:red"> paragraphe</span>
+            witch I use to show you the &lt;span&gt; tag!
+          </p>
+        </div>
+        <br>
+        <!--       END CODE -->
       </section>
 
       <section class="main-section " id="text_Structing_Tags">
